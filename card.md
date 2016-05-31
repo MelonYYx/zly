@@ -1,11 +1,11 @@
 ### 菜单获取
 
-```
+```javascript
 参数：
 {
     'controller':'card',
     'action':'index',
-    'id':ZlyJs.getUrlParam('id'),
+    'cardId':,  //年卡id
     'option':'menu'
 }
 返回：
@@ -45,12 +45,12 @@
 ```
 
 ### 年卡列表
-```
+```javascript
 参数：
 {
     'controller': 'card',
     'action': 'index',
-    'id': ZlyJs.getUrlParam('id'),
+    'cardId': ,   //年卡id
     'option': 'cardList'
 }
 返回：
@@ -99,7 +99,7 @@
 {
     'controller':'card',
     'action':'detail',
-    'id':ZlyJs.getUrlParam('id'),
+    'cardId':,   //年卡id
     'option':'getDetail',
     'isDesc':   //是否获取详情（1=>获取use_desc,buy_desc（年卡使用，购买详情）      0=>不获取use_desc,buy_desc）
 }
@@ -108,15 +108,7 @@
     "msg": "成功",
     "code": true,
     "data": {
-        "interface": {
-            "id": "2",
-            "member": "4",
-            "title": "众旅云",
-            "logo": "http://wx.qlogo.cn/mmopen/PLc9fhw8iashRwVh0RnTAPKty3I92cDzKzwsmSbv8tYplCB3Wj4T5rfuOE2nGC8UxDnibrhN7FXcrYkRxQdoYltZ5zjwgOmZna/0",
-            "service": "2",
-            "appuser": "gh_dd71d4eef1bf",
-            "qrcode_url": "http://mmbiz.qpic.cn/mmbiz/7aiaADrlRXiar2iaZ0VJQI5fficEfFs9SLmtw95laC6icGqjgv1GbfsRR2n6tbTer3ia0aDzjjbL31ClE31ibpBwibABtg/0"
-        },
+        "interface": {"略"},
         "cardRow": {
             "id": "5",
             "member_id": "4",
