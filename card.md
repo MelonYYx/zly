@@ -138,5 +138,36 @@
 }
 ```
 
+### 年卡申请
+```javascript
+参数
+{
+    'controller':'card',
+    'action':'check',
+    'option':'apply',
+    'tel':'',
+    'IDcard':'',
+    'name':'',
+    'userId':'',  //可选
+    'dealerId':"",
+    'cardId':"",
+    'gender':"",
+    'id_type':"",
+    'front_img':"",
+    'reverse_img':"",
+    'type_img':"",
+}
+返回
+{
+    "msg": "成功",
+    "code": true,
+    "data": {
+        "interface": {'略'},
+        "userId": "" 
+    }
+}
+```
+
+
 ### 年卡申请流程图
 ![image](https://github.com/MelonYii/images/blob/6633066c8216e169c716e5bd5133d6c74a3ecbba/cardApply.png)
