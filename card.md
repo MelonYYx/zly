@@ -1,6 +1,5 @@
 ### 菜单获取
 
-
 ```
 参数：
 {
@@ -93,4 +92,61 @@
     }
 }
 ```
-![image](https://github.com/MelonYii/images/blob/9ea7d4cad7446ae9be59da8d7737270ba1cad362/cardApply.png)
+
+### 年卡详情
+```javascript
+参数
+{
+    'controller':'card',
+    'action':'detail',
+    'id':ZlyJs.getUrlParam('id'),
+    'option':'getDetail',
+    'isDesc':   //是否获取详情（1=>获取use_desc,buy_desc（年卡使用，购买详情）      0=>不获取use_desc,buy_desc）
+}
+返回
+{
+    "msg": "成功",
+    "code": true,
+    "data": {
+        "interface": {
+            "id": "2",
+            "member": "4",
+            "title": "众旅云",
+            "logo": "http://wx.qlogo.cn/mmopen/PLc9fhw8iashRwVh0RnTAPKty3I92cDzKzwsmSbv8tYplCB3Wj4T5rfuOE2nGC8UxDnibrhN7FXcrYkRxQdoYltZ5zjwgOmZna/0",
+            "service": "2",
+            "appuser": "gh_dd71d4eef1bf",
+            "qrcode_url": "http://mmbiz.qpic.cn/mmbiz/7aiaADrlRXiar2iaZ0VJQI5fficEfFs9SLmtw95laC6icGqjgv1GbfsRR2n6tbTer3ia0aDzjjbL31ClE31ibpBwibABtg/0"
+        },
+        "cardRow": {
+            "id": "5",
+            "member_id": "4",
+            "buy_desc": "略",
+            "use_desc": "略",
+            "configure": "",
+            "name": "测试",
+            "delete": "0",
+            "dateline": "1464596757",
+            "money": "0.10",
+            "free": "0.10",
+            "image": "http://testtmpimage.b0.upaiyun.com/201605/20/146373482392500255.jpg",
+            "back_image": "http://testtmpimage.b0.upaiyun.com/201605/20/146373482405790041.jpg",
+            "type": "1"
+        },
+        "saleRow": {
+            "id": "18",
+            "member_id": "4",
+            "card_id": "5",
+            "starttime": "1464579600",
+            "endtime": "1464677400",
+            "sale": "10",
+            "delete": "0",
+            "desc": "<p>说啥呢</p>",
+            "isonline": "1",
+            "name": "第二个测试"
+        }
+    }
+}
+```
+
+### 年卡申请流程图
+![image](https://github.com/MelonYii/images/blob/6633066c8216e169c716e5bd5133d6c74a3ecbba/cardApply.png)
