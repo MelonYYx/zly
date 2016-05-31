@@ -5,7 +5,6 @@
 {
     'controller':'card',
     'action':'index',
-    'cardId':,  //年卡id
     'option':'menu'
 }
 返回：
@@ -50,7 +49,6 @@
 {
     'controller': 'card',
     'action': 'index',
-    'cardId': ,   //年卡id
     'option': 'cardList'
 }
 返回：
