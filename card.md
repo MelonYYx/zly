@@ -42,7 +42,7 @@
     }
 }
 ```
-
+---
 ### 年卡列表
 ```javascript
 参数：
@@ -90,7 +90,7 @@
     }
 }
 ```
-
+---
 ### 年卡详情
 ```javascript
 参数
@@ -212,7 +212,7 @@
     }
 }
 ```
-===
+---
 ### 年卡申请流程图
 ![image](https://github.com/MelonYii/images/blob/6633066c8216e169c716e5bd5133d6c74a3ecbba/cardApply.png)
 ---
