@@ -4,8 +4,8 @@
 参数：
 {
     'controller':'card',
-    'action':'index',
-    'option':'menu'
+    'action':'menu',
+    'option':'getList'
 }
 返回：
 {
@@ -48,8 +48,8 @@
 参数：
 {
     'controller': 'card',
-    'action': 'index',
-    'option': 'cardList'
+    'action': 'card',
+    'option': 'getList'
 }
 返回：
 {
@@ -96,7 +96,7 @@
 参数
 {
     'controller':'card',
-    'action':'detail',
+    'action':'card',
     'cardId':,   //年卡id
     'option':'getDetail',
     'isDesc':   //是否获取详情（1=>获取use_desc,buy_desc（年卡使用，购买详情）      0=>不获取use_desc,buy_desc）
@@ -137,13 +137,13 @@
     }
 }
 ```
-
+---
 ### 年卡申请
 ```javascript
 参数
 {
     'controller':'card',
-    'action':'check',
+    'action':'card',
     'option':'apply',
     'tel':'',
     'IDcard':'',
@@ -167,7 +167,57 @@
     }
 }
 ```
-
-
+---
+### 用户详情获取
+```javascript
+参数
+{
+    'controller':'card',
+    'action':'user',
+    'option':'getDetail',
+    'userId':'17'  //用户userId
+}
+返回
+{
+    "msg": "成功",
+    "code": true,
+    "data": {
+        "interface": {"略"},
+        "userRow": {
+            "id": "17",
+            "member_id": "4",
+            "dealer_id": "2",
+            "name": "黄婷婷",
+            "gender": "female",
+            "address": "杭州途记科技有限公司",
+            "id_type": "1",
+            "money": "0.10",
+            "IDcard": "452123199110013767",
+            "status": "5",
+            "openid": "",
+            "front_img": "http://testtmpimage.b0.upaiyun.com/201605/03/146225008804888134.jpg",
+            "reverse_img": "http://testtmpimage.b0.upaiyun.com/201605/03/146225008838188064.jpg",
+            "reg_date": "1462250087",
+            "check_date": "1462250087",
+            "tel": "18768120876",
+            "card_id": "3",
+            "is_get": "1",
+            "expire_date": "1493786087",
+            "last_img": "http://testtmpimage.b0.upaiyun.com/201605/03/146225008943432337.jpg",
+            "pay_date": "0",
+            "type_img": "",
+            "enable_date": "0",
+            "is_warn": "0"
+        }
+    }
+}
+```
+===
 ### 年卡申请流程图
 ![image](https://github.com/MelonYii/images/blob/6633066c8216e169c716e5bd5133d6c74a3ecbba/cardApply.png)
+---
+### 信息提交引导页
+![image](https://github.com/MelonYii/images/blob/master/%E4%BF%A1%E6%81%AF%E6%8F%90%E4%BA%A4%E5%BC%95%E5%AF%BC%E9%A1%B5.png)
+---
+### 支付页面
+![image](https://github.com/MelonYii/images/blob/master/%E6%94%AF%E4%BB%98%E9%A1%B5%E9%9D%A2.png)
