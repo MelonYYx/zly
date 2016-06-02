@@ -241,6 +241,42 @@
 }
 ```
 ---
+### 实体卡绑定线上卡
+```javascript
+参数
+    {
+        'controller':'card',
+        'action':'card',
+        'option':'bind',
+        'cardNum':'AAR0000000084',   //实体卡编号
+        'IDcard':'250722199402114236'  //身份证编号
+    }
+返回
+{
+    "msg": "绑定成功",
+    "code": true,
+    "data": {
+        "interface": {'略'},
+        "id": "84"   //返回userId
+    }
+}
+```
+---
+### 用户获取当前拥有年卡
+```javascript
+参数
+{
+    'controller':'card',
+    'action':'user',
+    'option':'getList'
+}
+返回
+
+```
+
+
+
+---
 ### 年卡申请流程图
 ![image](https://github.com/MelonYii/images/blob/6633066c8216e169c716e5bd5133d6c74a3ecbba/cardApply.png)
 ---
