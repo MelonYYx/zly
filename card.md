@@ -271,7 +271,114 @@
     'option':'getList'
 }
 返回
-
+{
+    "msg": "成功",
+    "code": true,
+    "data": {
+        "interface": {'略'},
+        "UserList": [            //status   6=>即将到期 7=>已经到期
+            {
+                "id": "17",
+                "member_id": "4",
+                "dealer_id": "2",
+                "name": "黄婷婷",
+                "gender": "female",
+                "address": "杭州途记科技有限公司",
+                "id_type": "1",
+                "money": "0.10",
+                "IDcard": "452123199110013767",
+                "status": "5",
+                "openid": "",
+                "front_img": "http://testtmpimage.b0.upaiyun.com/201605/03/146225008804888134.jpg",
+                "reverse_img": "http://testtmpimage.b0.upaiyun.com/201605/03/146225008838188064.jpg",
+                "reg_date": "1462250087",
+                "check_date": "1462250087",
+                "tel": "18768120876",
+                "card_id": "3",
+                "is_get": "1",
+                "expire_date": "1493786087",
+                "last_img": "http://testtmpimage.b0.upaiyun.com/201605/03/146225008943432337.jpg",
+                "pay_date": "0",
+                "type_img": "",
+                "enable_date": "0",
+                "is_warn": "0",
+                "cardID": "AAA0000000017"
+            },
+            {
+                "id": "18",
+                ...略
+            }
+        ],
+        "cardRow": {     //cardId为键，对应cardRow为值
+            "3": {
+                "id": "3",
+                "member_id": "4",
+                "configure": "360500*",
+                "name": "新余旅游年卡",
+                "delete": "0",
+                "dateline": "1464224290",
+                "money": "90.99",
+                "free": "150.00",
+                "image": "http://testtmpimage.b0.upaiyun.com/201605/03/146224483062210259.jpg",
+                "back_image": "http://testtmpimage.b0.upaiyun.com/201605/13/146312803163893373.jpg",
+                "type": "1"
+            },
+            "5": {
+                "id": "5",
+                "member_id": "4",
+                "name": "测试",
+                "delete": "0",
+                "dateline": "1464596757",
+                "money": "0.10",
+                "free": "0.10",
+                "image": "http://testtmpimage.b0.upaiyun.com/201605/20/146373482392500255.jpg",
+                "back_image": "http://testtmpimage.b0.upaiyun.com/201605/20/146373482405790041.jpg",
+                "type": "1"
+            }
+        }
+    }
+}
+```
+---
+### 用户动态二维码
+```jacascript
+参数
+{
+    'controller':'card',
+    'action':'user',
+    'option':'qrcode',
+    'userId':''
+}
+```
+---
+### 用户入园记录
+```javascript
+参数
+{
+    'controller':'card',
+    'action':'scenic',
+    'option':'getList',
+    'userId':'26'
+}
+返回
+{
+    "msg": "获取成功",
+    "code": true,
+    "data": {
+        "logsList": [
+            {
+                "dateline": "2016年05月04日 11:54:33",
+                "scenic_name": "仙女湖景区",
+                "is_pass" : '0'     
+            },
+            {
+                "dateline": "2016年05月03日 18:02:10",
+                "scenic_name": "仙女湖景区"
+                "is_pass" : '0'     
+            }
+        ]
+    }
+}
 ```
 
 
