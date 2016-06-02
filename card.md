@@ -213,6 +213,34 @@
 }
 ```
 ---
+### 获取支付信息
+```javascript
+参数
+{
+    'controller':'card',
+    'action':'order',
+    'option':'getPayData',
+    'userId':'17'
+}
+返回
+{
+    "msg": "成功",
+    "code": true,
+    "data": {
+        "interface": {'略'},
+        "data": {
+            "appid": "20160309140730672098",
+            "fee": 9099,
+            "tradeId": "C20160503123400000017",
+            "body": "新余旅游年卡",
+            "redirectUrl": "/index.php/4/#/card/index/?option=myDetail&do=payCallBack&dealerId=&userId=17",
+            "timeStamp": 1464830951
+        },
+        "sign": "bc44b1dc2d87a833930f8705aa666179"
+    }
+}
+```
+---
 ### 年卡申请流程图
 ![image](https://github.com/MelonYii/images/blob/6633066c8216e169c716e5bd5133d6c74a3ecbba/cardApply.png)
 ---
