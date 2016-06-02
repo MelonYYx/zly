@@ -185,6 +185,7 @@
         "interface": {"略"},
         "userRow": {
             "id": "17",
+            cardNum:"BBB0000000085",   //年卡编号
             "member_id": "4",
             "dealer_id": "2",
             "name": "黄婷婷",
@@ -340,17 +341,6 @@
 }
 ```
 ---
-### 用户动态二维码
-```jacascript
-参数
-{
-    'controller':'card',
-    'action':'user',
-    'option':'qrcode',
-    'userId':''
-}
-```
----
 ### 用户入园记录
 ```javascript
 参数
@@ -380,7 +370,34 @@
     }
 }
 ```
-
+---
+### 获取续费支付信息
+```javascript
+参数
+{
+    'controller':'card',
+    'action':'order',
+    'option':'getRenewData',
+    'userId':'17'
+}
+返回
+{
+    "msg": "成功",
+    "code": true,
+    "data": {
+        "interface": {'略'},
+        "data": {
+            "appid": "20160309140730672098",
+            "fee": 9099,
+            "tradeId": "C20160503123400000017",
+            "body": "新余旅游年卡",
+            "redirectUrl": "/index.php/4/#/card/index/?option=myDetail&do=payCallBack&dealerId=&userId=17",
+            "timeStamp": 1464830951
+        },
+        "sign": "bc44b1dc2d87a833930f8705aa666179"
+    }
+}
+```
 
 
 ---
@@ -392,3 +409,6 @@
 ---
 ### 支付页面
 ![image](https://github.com/MelonYii/images/blob/master/%E6%94%AF%E4%BB%98%E9%A1%B5%E9%9D%A2.png)
+---
+### 续费api
+![image](https://github.com/MelonYii/images/blob/master/%E7%BB%AD%E8%B4%B9api.png)
