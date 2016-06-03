@@ -201,6 +201,7 @@
     'option':'getDetail',
     'userId':'17'  //用户userId
     'getCard': ''   //是否获取对应cardRow  1=> 获取
+    'getDealer' : ''  //是否获取对应dealerRow   1=> 获取
 }
 返回
 {
