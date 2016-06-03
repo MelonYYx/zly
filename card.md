@@ -200,7 +200,7 @@
     'action':'user',
     'option':'getDetail',
     'userId':'17'  //用户userId
-    'getCard': ''   //是否获取对应CardRow  1=> 获取
+    'getCard': ''   //是否获取对应cardRow  1=> 获取
 }
 返回
 {
