@@ -302,7 +302,7 @@
     "code": true,
     "data": {
         "interface": {'略'},
-        "UserList": [            //status   6=>即将到期 7=>已经到期
+        "userList": [            //status   6=>即将到期 7=>已经到期
             {
                 "id": "17",
                 "member_id": "4",
@@ -439,8 +439,7 @@
     "data": {
         "interface": {'略'},
         "dealerList": {
-            "One": "5",
-            "All": [
+        [
                 {
                     "id": "1",
                     "member_id": "4",
@@ -495,7 +494,6 @@
                     "issend": "0",
                     "isfit": "0"
                 }
-            ]
         }
     }
 }
