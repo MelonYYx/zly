@@ -513,8 +513,6 @@
     "data": {
         "interface": {'略'},
         "moneyList": {
-            "One": "4",
-            "All": [
                 {
                     "id": "1",
                     "dealer_id": "1",
@@ -543,7 +541,6 @@
                     "member_id": "4",
                     "is_pay": "0"
                 }
-            ]
         }
     }
 }
