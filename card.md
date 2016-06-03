@@ -399,7 +399,133 @@
     }
 }
 ```
-
+---
+### 代售点列表接口
+```javascript
+参数
+{
+    'controller':'card',
+    'action':'dealer',
+    'option':'getList'
+}
+返回
+{
+    "msg": "成功",
+    "code": true,
+    "data": {
+        "interface": {'略'},
+        "dealerList": {
+            "One": "5",
+            "All": [
+                {
+                    "id": "1",
+                    "member_id": "4",
+                    "name": "代售点122",
+                    "address": "杭州西斗门路天堂软件园",
+                    "tel": "18768120987",
+                    "lng": "",
+                    "lat": "",
+                    "delete": "0",
+                    "dateline": "1464226203",
+                    "username": "5820120@zlvyun.com",
+                    "passwd": "c64125ee5219cc527dc7501372b7a738",
+                    "tag": "AAR",
+                    "openid": "o6D74tyLSAE-wCKIjgzOxtlvOlD8",
+                    "profit": "0.01",
+                    "issend": "0",
+                    "isfit": "0"
+                },
+                {
+                    "id": "2",
+                    "member_id": "4",
+                    "name": "代售点1",
+                    "address": "杭州西斗门路天堂软件园",
+                    "tel": "18768120987",
+                    "lng": "",
+                    "lat": "",
+                    "delete": "0",
+                    "dateline": "1462245008",
+                    "username": "5820120@zlvyun.com",
+                    "passwd": "728620f5ca58e1836093dfda592b96ae",
+                    "tag": "AAA",
+                    "openid": "o6D74tyLSAE-wCKIjgzOxtlvOlD8",
+                    "profit": "0.00",
+                    "issend": "0",
+                    "isfit": "0"
+                },
+                {
+                    "id": "3",
+                    "member_id": "4",
+                    "name": "测试地址",
+                    "address": "浙江",
+                    "tel": "15757160309",
+                    "lng": "",
+                    "lat": "",
+                    "delete": "0",
+                    "dateline": "1464061978",
+                    "username": "yyxx",
+                    "passwd": "fd7f0f5b6afa610ad3e334acad32b0e4",
+                    "tag": "BBB",
+                    "openid": "",
+                    "profit": "0.00",
+                    "issend": "0",
+                    "isfit": "0"
+                }
+            ]
+        }
+    }
+}
+```
+### 订单列表获取
+```javascript
+参数
+{
+    'controller':'card',
+    'action':'order',
+    'option':'getList'
+}
+返回
+{
+    "msg": "成功",
+    "code": true,
+    "data": {
+        "interface": {'略'},
+        "moneyList": {
+            "One": "4",
+            "All": [
+                {
+                    "id": "1",
+                    "dealer_id": "1",
+                    "card_id": "3",
+                    "user_id": "32",
+                    "isonline": "1",
+                    "isrenew": "1",
+                    "order_id": "1994050130",
+                    "money": "20.00",
+                    "delete": "0",
+                    "dateline": "131",
+                    "member_id": "4",
+                    "is_pay": "0"
+                },
+                {
+                    "id": "4",
+                    "dealer_id": "1",
+                    "card_id": "3",
+                    "user_id": "79",
+                    "isonline": "0",
+                    "isrenew": "1",
+                    "order_id": "1994050133",
+                    "money": "25.00",
+                    "delete": "0",
+                    "dateline": "1461600400",
+                    "member_id": "4",
+                    "is_pay": "0"
+                }
+            ]
+        }
+    }
+}
+```
 
 ---
 ### 年卡申请流程图
