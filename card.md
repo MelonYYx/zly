@@ -546,7 +546,42 @@
     }
 }
 ```
-
+---
+```javascript
+参数
+{
+    'controller':'card',
+    'action':'dealer',
+    'option':'getDetail',
+    'dealerId' :'3'
+}
+返回
+{
+    "msg": "获取代售点详情成功",
+    "code": true,
+    "data": {
+        "interface": {略},
+        "dealerRow": {
+            "id": "3",
+            "member_id": "4",
+            "name": "测试地址",
+            "address": "浙江",
+            "tel": "15757160309",
+            "lng": "",
+            "lat": "",
+            "delete": "0",
+            "dateline": "1464061978",
+            "username": "yyxx",
+            "passwd": "fd7f0f5b6afa610ad3e334acad32b0e4",
+            "tag": "BBB",
+            "openid": "",
+            "profit": "0.00",
+            "issend": "0",
+            "isfit": "0"
+        }
+    }
+}
+```
 ---
 ### 年卡申请流程图
 ![image](https://github.com/MelonYii/images/blob/6633066c8216e169c716e5bd5133d6c74a3ecbba/cardApply.png)
