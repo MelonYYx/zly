@@ -21,7 +21,7 @@
 -------------------------
 -公告栏页							notice
 ```
-
+![image](https://github.com/MelonYii/images/blob/master/%E5%89%8D%E5%8F%B0%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg)
 ### 菜单获取
 
 ```javascript
