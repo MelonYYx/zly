@@ -563,32 +563,46 @@
 ```javascript
 参数
 {
-    'username',
-    'password',
-    'timeStamp'
+    'controller':'card',
+    'action':'app',
+    'option':'login', 
+    'username':'',
+    'password':'',
+    'timeStamp:''
 }
 ```
 ### app接口获取用户信息
 ```javascript
 参数
 {
-    'userId',
-    'perId',
-    'timeStamp'
+    'controller':'card',
+    'action':'app',
+    'option':'select', 
+    'userId':'',
+    'perId':'',
+    'timeStamp':''
 }
 ```
 ### app接口通过入库
 ```javascript
-    'userId',
-    'perId',
-    'timeStamp'
+{
+    'controller':'card',
+    'action':'app',
+    'option':'pass', 
+    'userId':'',
+    'perId':'',
+    'timeStamp':''
+}
 ```
 ### app接口不通过入库
 ```javascript
 {
-    'userId'，
-    'perId'，
-    'timeStamp'，
+     'controller':'card',
+    'action':'app',
+    'option':'refuse',
+    'userId':'',
+    'perId':'',
+    'timeStamp':'',
     'remarks'(可空)
 }
 ```
