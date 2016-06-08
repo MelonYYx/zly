@@ -582,6 +582,39 @@
     }
 }
 ```
+### app接口验证登陆
+```javascript
+参数
+{
+    'username',
+    'password',
+    'timeStamp'
+}
+```
+### app接口获取用户信息
+```javascript
+参数
+{
+    'userId',
+    'perId',
+    'timeStamp'
+}
+```
+### app接口通过入库
+```javascript
+    'userId',
+    'perId',
+    'timeStamp'
+```
+### app接口不通过入库
+```javascript
+{
+    'userId'，
+    'perId'，
+    'timeStamp'，
+    'remarks'(可空)
+}
+```
 ---
 ### 年卡申请流程图
 ![image](https://github.com/MelonYii/images/blob/6633066c8216e169c716e5bd5133d6c74a3ecbba/cardApply.png)
