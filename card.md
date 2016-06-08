@@ -1,26 +1,3 @@
-
-```
--首页								index
--------------------------
--我的年卡							myCard
-　　-绑定实体卡				    	binging
-　　-我的年卡列表					list
-　　-核销入院						verification
-　　-年卡续费						renwal
-　　-提交成功						success
--------------------------
--购买年卡							details
-　　-年卡列表						list
-　　-年卡购买信息提交				pay
-　　-年卡支付						order
-　　-信息提交引导页					pay-success
---------------------------
--代售点						    	Outlets
---------------------------
--年卡订单							consignee
--------------------------
--公告栏页							notice
-```
 ![image](https://github.com/MelonYii/images/blob/master/%E5%89%8D%E5%8F%B0%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg)
 ### 菜单获取
 
