@@ -1,2 +1,6 @@
 # zly
-年卡接口
+* [年卡接口](card.md)
+* [总后台管理](http://drive.alpha.zlvyun.com/manage) 
+* [代售点后台管理](http://drive.alpha.zlvyun.com/card/manage) 
+* [景区后台管理](http://drive.alpha.zlvyun.com/card/scenic) 
+
