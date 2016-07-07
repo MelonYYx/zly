@@ -1,5 +1,6 @@
 # zly
-* [年卡接口](card.md)
+* [年卡开发接口](card.md)
+* [测试方案](rc.md)
 * 总后台管理
   * [正式](http://drive.zlvyun.com/manage) 
   * [开发alpha](http://drive.alpha.zlvyun.com/manage) 
