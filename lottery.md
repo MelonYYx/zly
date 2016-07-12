@@ -1,6 +1,6 @@
 ## 抽奖公共接口
 抽奖接口在LotteryModel下
-```php```
+```
 public function  GetPrize ()   //传入openid 活动id 判断此用户是否中奖，并返回相应奖品
 参数：
 array('openid' =>  ,  //用户openid
