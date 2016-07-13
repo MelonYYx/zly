@@ -4,7 +4,7 @@
 ### 获取当前活动相关信息
 参数 | 含义 | 值
 ---|---|---
-controller | 控制器 | lottery
+controller | 控制器 | flop
 action | 行为 | activity
 option | 执行 | getDetail
 activityId | 活动id | 例：'1' 
