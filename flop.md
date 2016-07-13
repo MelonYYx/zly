@@ -85,6 +85,6 @@ codeId | 对应的码id | 例：'1'
 activityId | 活动id | 例：'1'
 
 返回code | 含义
----｜---
+--- | ---
 false | 核销失败，打印错误信息
 true | 核销成功
