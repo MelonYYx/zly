@@ -16,7 +16,6 @@ member_id | 所属企业编号
 title | 活动名称
 intro | 简介
 image | 图片地址
-verifi_code | 核销码
 address | 领奖地址
 contacts | 联系人
 tel | 联系电话
