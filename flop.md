@@ -36,7 +36,7 @@ action | 行为 | activity
 option | 执行 | getPrizeList
 activityId | 活动id | 例：'1'
 
-data主要返回 | 含义
+主要返回 | 含义
 --- | ---
 id | 编号
 member_id | 所属企业编号
@@ -52,3 +52,24 @@ image | 图片地址
 money_up | 如果为红包其额度上限(单位：分)
 money_down | 如果为红包其额度下限（单位：分）
 dateline | 时间
+
+---
+
+### 获取当前用户所有码
+参数 | 含义 | 值
+--- | --- | ---
+controller | 控制器 | flop
+action | 行为 | code
+option | 执行 | getList
+
+主要返回 | 含义
+--- | ---
+id | 编号
+member_id | 所属企业编号
+activity_id | 活动id
+user_id | 用户id
+code | 码
+is_win | 是否中奖0=>未开奖/未中奖 1=>中奖
+rank | 中奖等次
+prize_id | 奖品id
+dateline | 创建时间
