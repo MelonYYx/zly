@@ -72,3 +72,19 @@ is_win | 是否中奖0=>未开奖/未中奖 1=>中奖
 rank | 中奖等次
 prize_id | 奖品id
 dateline | 创建时间
+
+---
+### 通过核销码兑奖
+参数 | 含义 | 值
+--- | --- | ---
+controller | 控制器 | flop
+action | 行为 | activity
+option | 执行 | checkCode
+verifiCode | 核销员输入的核销码 | 由页面获取
+codeId | 对应的码id | 例：'1'
+activityId | 活动id | 例：'1'
+
+返回code | 含义
+---｜---
+false | 核销失败，打印错误信息
+true | 核销成功
