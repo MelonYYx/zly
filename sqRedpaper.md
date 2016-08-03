@@ -1,7 +1,7 @@
-## 用户表 (db_user)
+# 用户表 (db_user)
 
 编号 | 列名             | 数据类型        | 是否为空     | 约束条件              | 列名说明
-:- | :------------- | :---------- | :------- | :---------------- | :-----
+-- | -------------- | ----------- | -------- | ----------------- | ------
 1  | id             | Smallint(5) | Not null | AUTO_INCREMENT pk | 编号
 2  | nickname       | varchar(60) | Not null | 默认为''             | 微信获取昵称
 3  | openid         | text        | Not null | 默认为''             | openid
@@ -11,10 +11,10 @@
 7  | address        | varchar(40) |          |                   | 地址
 8  | address_detail | varchar(40) |          |                   | 详细地址
 
-## 订单表 (db_order)
+# 订单表 (db_order)
 
 编号 | 列名          | 数据类型         | 是否为空     | 约束条件              | 列名说明
-:- | :---------- | :----------- | :------- | :---------------- | :------
+-- | ----------- | ------------ | -------- | ----------------- | -------
 1  | id          | Smallint(5)  | Not null | AUTO_INCREMENT pk | 编号
 2  | member_id   | Mediumint(8) | Not null | 默认为''             | 所属企业编号
 3  | user_id     | Varchar(40)  | Not null | 默认为''             | 用户编号
