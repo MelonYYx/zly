@@ -57,7 +57,7 @@
 4    | order_id   | varchar(40)  | Not null | 默认为''             | 操作订单号(order表中的order_id)
 5    | id_card    | varchar(40)  | Not null | 默认为''             | 操作身份证号
 6    | status     | tinyint(3)   | Not null | 默认为''             | 操作类型(1=>审核,2=>发放红包,3=>)
-7    | log        | text         | Not null | 默认为''             | 操作内容()
+7    | log        | text         | Not null | 默认为''             | 操作内容
 8    | dateline   | int(10)      | Not null | 默认为''             | 时间
 
 --------------------------------------------------------------------------------
